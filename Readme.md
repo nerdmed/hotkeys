@@ -70,5 +70,5 @@ Let's see:
 Feauture and Pullrequests are welcome!
 
 
-Developed by [flowkey](//:www.flowkey.com)
+Developed by [flowkey](://www.flowkey.com)
 
