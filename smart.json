@@ -1,0 +1,11 @@
+{
+  "name": "hotkeys",
+  "description": "Easy and effective Hotkeys for your app, powered by mousetrap",
+  "homepage": "",
+  "author": "Ahmed Hassan <med@flowkey.com> (http://flowkey.com)",
+  "version": "0.0.1",
+  "git": "",
+  "packages": {
+  	"mousetrap" : "1.5.2"
+  }
+}
