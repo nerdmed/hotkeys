@@ -1,7 +1,7 @@
 {
   "name": "hotkeys",
   "description": "Easy and effective Hotkeys for your app, powered by mousetrap",
-  "homepage": "",
+  "homepage": "https://github.com/nerdmed/hotkeys",
   "author": "Ahmed Hassan <med@flowkey.com> (http://flowkey.com)",
   "version": "0.0.1",
   "git": "https://github.com/nerdmed/hotkeys.git",
