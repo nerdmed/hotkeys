@@ -21,7 +21,10 @@ _.extend(Hotkeys.prototype, {
         this.hotkeys.push(obj);
 
         // Small Error check
-        check(combo, String);
+        if(!_.isArray(combo)){
+            check(combo, String);
+        }
+
         if (!_.isFunction(callback)) {
             throw new Meteor.Error(001, 'Error 001: Callback is not a Function');
         }
