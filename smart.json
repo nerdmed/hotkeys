@@ -6,6 +6,8 @@
   "version": "0.0.3",
   "git": "https://github.com/nerdmed/hotkeys.git",
   "packages": {
-  	"mousetrap" : "1.5.2"
+  	"mousetrap" : {
+  		"path" : "mousetrap"
+  	}
   }
 }
