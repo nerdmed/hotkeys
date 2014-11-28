@@ -3,7 +3,7 @@ This packages provides you with an easy way to manage Hotkeys and Keyboard Short
 
 ##Install
 
-		mrt add hotkeys
+		meteor add flowkey:hotkeys
 
 ##Get Started
 
