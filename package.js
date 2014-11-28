@@ -6,7 +6,8 @@ Package.describe({
 });
 
 Package.onUse(function(api, where) {
-  api.use(['underscore', 'check', 'mousetrap:mousetrap'], 'client');
+  api.versionsFrom('1.0');
+  api.use(['underscore', 'check', 'mousetrap:mousetrap@1.4.6'], 'client');
   api.addFiles(['hotkeys.js'], 'client');
 
   api.export('Hotkeys');
