@@ -1,11 +1,13 @@
 Package.describe({
-    summary: "Easy and effective Hotkeys for your app"
+  name: 'flowkey:hotkeys',
+  summary: 'Easy and effective hotkeys for your app, powered by Mousetrap',
+  version: '1.1',
+  git: 'https://github.com/nerdmed/hotkeys.git'
 });
 
-Package.on_use(function(api, where) {
-    api.use(['underscore','check','mousetrap'], "client");
-    api.add_files(['hotkeys.js'], "client");
+Package.onUse(function(api, where) {
+  api.use(['underscore', 'check', 'mousetrap:mousetrap'], 'client');
+  api.addFiles(['hotkeys.js'], 'client');
 
-    api.export("Hotkeys")
-
+  api.export('Hotkeys');
 });
