@@ -50,6 +50,7 @@ _.extend(Hotkeys.prototype, {
         var allHotkeys = this.hotkeys;
         _.each(allHotkeys, function(hotkey) {
             var comboMapEntry = comboMap[hotkey.combo];
+
             _.each(comboMapEntry, function(func, index){
             	if(func == hotkey.callback){
 					comboMap[hotkey.combo].splice(index,1);
@@ -57,7 +58,12 @@ _.extend(Hotkeys.prototype, {
             });
 
             // bind it back to the original one
-            Mousetrap.bind(hotkey.combo, comboMap[hotkey.combo][comboMapEntry.length -1 ] );
+            if(comboMapEntry.length > 0){
+                Mousetrap.bind(hotkey.combo, comboMap[hotkey.combo][comboMapEntry.length -1 ]);   
+            }else{
+                Mousetrap.unbind(hotkey.combo);
+            }
+
         })
 
     }
