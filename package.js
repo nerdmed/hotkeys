@@ -1,7 +1,7 @@
 Package.describe({
   name: 'flowkey:hotkeys',
   summary: 'Easy and effective hotkeys for your app, powered by Mousetrap',
-  version: '1.1.0',
+  version: '1.1.1',
   git: 'https://github.com/nerdmed/hotkeys.git'
 });
 
