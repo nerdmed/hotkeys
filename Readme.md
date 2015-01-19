@@ -1,5 +1,5 @@
 #Meteor Hotkeys
-This packages provides you with an easy way to manage Hotkeys and Keyboard Shortcuts in your Meteor Project.
+This packages provides you with an easy way to manage Hotkeys and Keyboard Shortcuts in your Meteor Project. We internally use  [mousetrap](http://craig.is/killing/mice) - so you can use all the features provided there.
 
 ##Install
 
