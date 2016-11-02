@@ -15,6 +15,7 @@ This packages provides you with an easy way to manage Hotkeys and Keyboard Short
 
 	globalHotkeys.add({
 		combo : "ctrl+4",
+		eventType: "keydown",
 		callback : function(){
 			alert("You pressed ctrl+4");
 		}

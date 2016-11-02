@@ -15,7 +15,7 @@ _.extend(Hotkeys.prototype, {
     add: function(obj) {
         var combo = obj.combo;
         var description = obj.description;
-        var reference = obj.reference; 
+        var evenType = obj.evenType; 
         var callback = obj.callback;
 
         // add all hotkeys to local collection
@@ -26,8 +26,8 @@ _.extend(Hotkeys.prototype, {
             check(combo, String);
         }
 
-        if(!_.isString(reference)){
-            reference = '';
+        if(!_.isString(evenType)){
+            evenType = '';
         }
 
         if (!_.isFunction(callback)) {
@@ -40,14 +40,14 @@ _.extend(Hotkeys.prototype, {
         }
         if (this.autoLoad === true) {
             comboMap[combo].push(callback);
-            Mousetrap.bind(combo, callback, reference);
+            Mousetrap.bind(combo, callback, evenType);
         }
     },
     load: function() {
         var allHotkeys = this.hotkeys;
         _.each(allHotkeys, function(hotkey) {
             comboMap[hotkey.combo].push(hotkey.callback);
-            Mousetrap.bind(hotkey.combo, hotkey.callback, hotkey.reference);
+            Mousetrap.bind(hotkey.combo, hotkey.callback, hotkey.evenType);
         })
 
     },
@@ -64,7 +64,7 @@ _.extend(Hotkeys.prototype, {
 
             // bind it back to the original one
             if(comboMapEntry.length > 0){
-                Mousetrap.bind(hotkey.combo, comboMap[hotkey.combo][comboMapEntry.length -1 ], hotkey.reference);   
+                Mousetrap.bind(hotkey.combo, comboMap[hotkey.combo][comboMapEntry.length -1 ], hotkey.evenType);   
             }else{
                 Mousetrap.unbind(hotkey.combo);
             }

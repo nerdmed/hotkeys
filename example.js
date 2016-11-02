@@ -3,6 +3,7 @@ globalHotkeys = new Hotkeys();
 globalHotkeys.add({
     combo: 'ctrl+up',
     description: 'A simple Alert Example',
+    evenType: 'keyup',
     callback: function() {
        alert("this is a ctrl+up hotkey");
     }
